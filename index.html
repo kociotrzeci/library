@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+</header>
+<table>
+    <thead>
+        <tr>
+            <th style="width: 40%">Author</th>
+            <th style="width: 40%">Title</th>
+            <th style="width: 10%">Pages</th>
+            <th style="width: 10%">Read</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Sienkiewicz Henryk</td>
+          <td>Ogniem i Mieczem</td>
+          <td>432</td>
+          <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </td>
+        </tr>
+        <tr>
+          <td>Sienkiewicz Henryk</td>
+          <td>Ogniem i Mieczem</td>
+          <td>432</td>
+          <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </td>
+        </tr>
+        <tr>
+          <td>Sienkiewicz Henryk</td>
+          <td>Ogniem i Mieczem</td>
+          <td>432</td>
+          <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </td>
+        </tr>
+        <tr>
+          <td>Sienkiewicz Henryk</td>
+          <td>Ogniem i Mieczem</td>
+          <td>432</td>
+          <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> </td>
+        </tr>
+    </tbody>
+</table>
+
+  <dialog>
+    <form id="bookForm">
+        <div class="form-field-container">
+          <label for="author">Author:</label><br>
+          <input type="text" id="author" name="author"><br>
+        </div>
+        <div class="form-field-container">
+          <label for="title">Title:</label><br>
+          <input type="text" id="title" name="title"><br>
+        </div>
+        <div class="form-field-container">
+          <label for="pages">Pages:</label><br>
+          <input type="text" id="pages" name="pages"><br>
+        </div>
+        <div class="form-field-container">
+          <label for="read">Read:</label>
+          <input type="checkbox" id="read" name="read"><br>
+        </div>
+        <button id="close">Add</button>
+    </form>
+  </dialog>
+  <button id="addBook">Add New Book</button>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
