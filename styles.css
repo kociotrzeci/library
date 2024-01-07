@@ -53,6 +53,11 @@ button, input[type=submit]  {
     cursor: pointer;
 }
 
+input[type=checkbox]{
+    display: block;
+    margin: auto;
+}
+
 button:hover, input[type=submit]:hover {
     background-color: #45a049;
 }
