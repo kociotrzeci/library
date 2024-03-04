@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Library</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Library</h1>
-</header>
-<table>
-    <thead>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+    </header>
+    <table>
+      <thead>
         <tr>
-            <th style="width: 40%">Author</th>
-            <th style="width: 40%">Title</th>
-            <th style="width: 10%">Pages</th>
-            <th style="width: 10%">Read</th>
-            <th style="width: 10%">Remove</th>
+          <th style="width: 40%">Author</th>
+          <th style="width: 40%">Title</th>
+          <th style="width: 10%">Pages</th>
+          <th style="width: 10%">Read</th>
+          <th style="width: 10%">Remove</th>
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         <tr>
           <td>Sienkiewicz Henryk</td>
           <td>Ogniem i Mieczem</td>
           <td>432</td>
-          <td><input type="checkbox"> </td>
+          <td><input type="checkbox" /></td>
           <td><button type="button">X</button></td>
         </tr>
-    </tbody>
-</table>
+      </tbody>
+    </table>
 
-  <dialog>
-    <form id="bookForm">
+    <dialog>
+      <form id="bookForm">
         <div class="form-field-container">
-          <label for="author">Author:</label><br>
-          <input type="text" id="author" name="author"><br>
+          <label for="author">Author:*</label><br />
+          <input type="text" id="author" name="author" required /><br />
         </div>
         <div class="form-field-container">
-          <label for="title">Title:</label><br>
-          <input type="text" id="title" name="title"><br>
+          <label for="title">Title:*</label><br />
+          <input type="text" id="title" name="title" required /><br />
         </div>
         <div class="form-field-container">
-          <label for="pages">Pages:</label><br>
-          <input type="text" id="pages" name="pages"><br>
+          <label for="pages">Pages:*</label><br />
+          <input
+            type="number"
+            id="pages"
+            name="pages"
+            required
+            inputmode="numeric"
+          /><br />
         </div>
         <div class="form-field-container">
           <label for="read">Read:</label>
-          <input type="checkbox" id="read" name="read"><br>
+          <input type="checkbox" id="read" name="read" /><br />
         </div>
         <button id="close">Add</button>
-    </form>
-  </dialog>
-  <button id="addBook">Add New Book</button>
-
-
+      </form>
+    </dialog>
+    <button id="addBook">Add New Book</button>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
